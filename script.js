@@ -15,7 +15,6 @@ const languages = [
 ];
 
 const lang = document.getElementById("language");
-
 function changeLanguage() {
   let random = Math.trunc(Math.random() * languages.length);
   lang.innerHTML = languages[random];

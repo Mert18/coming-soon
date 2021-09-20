@@ -26,7 +26,7 @@ body {
 }
 .container {
   display: grid;
-  grid-template-rows: 10vh 35vh 25vh 25vh;
+  grid-template-rows: 20vh 15vh 25vh 25vh;
   grid-template-columns: 1fr 8fr 1fr;
   grid-template-areas:
     ". . ."
@@ -41,8 +41,36 @@ body {
 .comingsoon {
   grid-area: comingsoon;
   justify-self: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 .benotified {
   grid-area: benotified;
   justify-self: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.form input {
+  padding: 0.6rem 0.2rem;
+  font-size: 1.2rem;
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+}
+.form input::placeholder {
+  color: rgb(195, 195, 195);
+}
+.form button {
+  margin-top: 1rem;
+  padding: 0.3rem 0.6rem;
+}
+.form button:hover {
+  cursor: pointer;
 }
